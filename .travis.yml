@@ -1,7 +1,11 @@
+# Travis Build Lifecycle Reference: https://docs.travis-ci.com/user/job-lifecycle/
+# Travis Supported Languages Reference: https://docs.travis-ci.com/user/languages/
+
 install:
-# Setup your build environment here
-- mvn clean install
+# Setup your build environment here, for example:
+#- mvn clean install
 
 script:
 # Place your build and execute commands here
-- verify.sh
+# Ensure verify.sh executes against the output of your program
+- program.sh > verify.sh
