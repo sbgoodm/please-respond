@@ -1,0 +1,7 @@
+install:
+# Setup your build environment here
+- mvn clean install
+
+script:
+# Place your build and execute commands here
+- verify.sh
