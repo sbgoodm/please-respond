@@ -1,6 +1,9 @@
 # Travis Build Lifecycle Reference: https://docs.travis-ci.com/user/job-lifecycle/
 # Travis Supported Languages Reference: https://docs.travis-ci.com/user/languages/
 
+# Feel free to switch your language to one of the supported languages, documented above
+language: generic
+
 install:
 # Setup your build environment here, for example:
 #- mvn clean install
@@ -8,4 +11,4 @@ install:
 script:
 # Place your build and execute commands here
 # Ensure verify.sh executes against the output of your program
-- program.sh > verify.sh
+- ./program.sh | ./verify.sh
